@@ -1,0 +1,56 @@
+{
+  "model_name": "DenseNet-121",
+  "task": "multi-label-classification",
+  "dataset": "NIH ChestX-ray14",
+  "num_classes": 14,
+  "classes": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Effusion",
+    "Infiltration",
+    "Mass",
+    "Nodule",
+    "Pneumonia",
+    "Pneumothorax",
+    "Consolidation",
+    "Edema",
+    "Emphysema",
+    "Fibrosis",
+    "Pleural_Thickening",
+    "Hernia"
+  ],
+  "input_size": [
+    224,
+    224
+  ],
+  "input_channels": 3,
+  "normalize_mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "normalize_std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "output_activation": "sigmoid",
+  "best_val_auc": 0.8252,
+  "test_mean_auc": 0.7988,
+  "per_class_auc": {
+    "Atelectasis": 0.7447,
+    "Cardiomegaly": 0.8662,
+    "Effusion": 0.814,
+    "Infiltration": 0.7003,
+    "Mass": 0.7942,
+    "Nodule": 0.7403,
+    "Pneumonia": 0.7081,
+    "Pneumothorax": 0.8433,
+    "Consolidation": 0.7342,
+    "Edema": 0.8321,
+    "Emphysema": 0.8967,
+    "Fibrosis": 0.82,
+    "Pleural_Thickening": 0.7546,
+    "Hernia": 0.9351
+  }
+}
